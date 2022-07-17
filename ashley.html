@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>Midterm Quiz</title>
+    <script>
+        let grade1 = 85, grade2 = 77, grade3 = 82, grade4 = 90, grade5 = 87;
+        let average = (grade1 + grade2 + grade3 + grade4 + grade5) / 5;
+        let fav_food = 'Tahong', fav_sport = 'Basketball', fav_athlete = 'Lexi Lore', fav_band = 'Grin Department';
+    </script>
+    <style>
+        .con1 {
+            padding-top: 20px;
+        }
+
+        .con1,
+        .con2,
+        .con3 {
+            padding-bottom: 20px;
+        }
+
+        .average {
+            padding: 20px 0 5px 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="con1">
+        <p id="p1">Ashley</p>
+        <button onclick="document.getElementById('p1').innerHTML = 'Ashley San Pedro';">Get Full
+            Name</button>
+    </div>
+    <div class="con2">
+        <p class="grade1">MATH101: 85</p>
+        <p class="grade2">PHI101: 77</p>
+        <p class="grade3">SOC101: 82</p>
+        <p class="grade4">PE101: 90</p>
+        <p class="grade5">CL101: 87</p>
+        <p class="average"></p>
+        <button onclick="document.getElementsByClassName('average')[0].innerHTML = 'AVERAGE: ' + average">Get
+            Average</button>
+
+    </div>
+
+    <div class="con3">
+        <p class="var1"></p>
+        <p class="var2"></p>
+        <p class="var3"></p>
+        <p class="var4"></p>
+
+        <button onclick="document.getElementsByClassName('var1')[0].innerHTML = 'Favorite Food: '  + fav_food;  
+        document.getElementsByClassName('var2')[0].innerHTML = 'Favorite Sport: '  + fav_sport;
+            document.getElementsByClassName('var3')[0].innerHTML = 'Favorite Athlete: '  + fav_athlete;
+            document.getElementsByClassName('var4')[0].innerHTML = 'Favorite Band: '  + fav_band;">
+            About
+            Me</button>
+
+    </div>
+
+</body>
+
+</html>
